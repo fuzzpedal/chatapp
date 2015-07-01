@@ -3,3 +3,6 @@ SCRIPT_DIR := $(shell cd $(dir $(THIS_MAKEFILE_PATH));pwd)
 
 setup:
 	${SCRIPT_DIR}/scripts/setup_project.sh
+
+run:
+	${SCRIPT_DIR}/scripts/run_project.sh
