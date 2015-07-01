@@ -1,0 +1,9 @@
+""" Constants """
+
+STATUS_ONLINE = "online"
+STATUS_OFFLINE = "offline"
+STATUS_AWAY = "away"
+STATUS_BUSY = "busy"
+
+MIN_USERNAME_LENGTH = 5
+MIN_PASSWORD_LENGTH = 8

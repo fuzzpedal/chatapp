@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Chat Client</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="chatserviceurl" content="http://chatserver:8080/">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    
+    <div id="joinModal" class="modal fade hide">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>Join a conversation</h3>
+        </div>
+        <div class="modal-body">
+                <input name="conversation_id" type="text" placeholder="#room" />
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal">Close</button>
+            <button id="joinModalBtn" class="btn btn-primary">Join</button>
+        </div>
+    </div>
+    <div id="loggedout">
+        <div class="inner well">
+            <div id="login">
+                <h2>Please log in</h2>
+                <form action="http://chatserver:8080/login" method="GET">
+                    <input name="username" type="text" placeholder="Username" />
+                    <input name="password" type="password" placeholder="Password" />
+                    <button id="loginBtn" class="login btn btn-primary start"
+                            data-loading-text="<i class='icon-upload icon-white'></i>">Login</button>
+                </form>                
+            </div>
+            <div id="register">
+            <h2>or register</h2>
+                <form action="http://chatserver:8080/register" method="GET">
+                    <input name="username" type="text" placeholder="Username" />
+                    <input name="password" type="password" placeholder="Password" />
+                    <input name="password2" type="password" placeholder="Re-enter password" />
+                    <button class="register btn btn-primary">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div id="container" class="hide">
+        <div id="header">
+            <button id="logout" class="btn">Logout</button>
+            <button id="join" class="btn">Join</button>
+        </div>
+        <div id="contacts">
+            <ol>
+            </ol>
+        </div>
+        <div id="history">
+            <h2 class="conversation-id"></h2>
+            <ol>
+            </ol>
+        </div>
+        <div id="compose">
+            <form action="" method="GET">
+                <input type="text" name="new_message" />
+                <button class="btn" >Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

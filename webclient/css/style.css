@@ -1,0 +1,134 @@
+body {
+    background: #eee;
+}
+
+ol { margin: 0; padding: 0; list-style: none; }
+
+
+/* START #loggedout */
+#loggedout .inner {
+    background: #fff;
+    width: 500px;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+#loggedout input {
+    display: block;
+    padding: 8px 12px;
+    font-size: 120%;
+}
+
+#loggedout button {
+    margin: 10px 0px;
+}
+/* END #loggedout */
+
+button.login { display: block; }
+
+#container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;    
+    background: #ccc;
+}
+
+#contacts {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    width: 245px;
+    background: #fff;
+    overflow: auto;
+}
+#contacts li {
+    padding: 10px 10px 10px 30px;
+    background: #eee;
+}
+#contacts .contact a {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#history {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    bottom: 70px;
+    right: 250px;
+    background: #fff;
+    border-right: 2px solid #ccc;
+    overflow: auto;
+}
+#history .conversation-id {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0px 0px 5px;
+    padding: 5px 10px;
+    background: #eee;
+    font-size: 12pt;
+}
+
+#history ol {
+    padding: 50px 10px 10px;
+}
+
+#history ol li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #efefef;
+}
+#history ol li .from {
+    font-weight: bold;
+    margin-right: 10px;
+}
+#history ol li .timestamp {
+    float: right;
+    font-size: 90%;
+}
+
+#compose {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 250px;
+    height: 50px;
+    background: #333;
+    padding: 10px;
+}
+
+#compose input {
+    width: 85%;
+    margin: 5px auto;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: #333;
+}
+
+#logout {
+    float: right;
+    margin: 10px;
+}
+
+#join {
+    float: right;
+    margin: 10px;
+}
+
+#join-model {
+    
+}
